@@ -1,3 +1,3 @@
 export default function Header() {
-  return <header>Header</header>;
+  return <header className="h-20 w-full bg-indigo-400 p-4">Header</header>;
 }
