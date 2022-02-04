@@ -1,10 +1,13 @@
 import type { NextPage } from "next";
+import Button from "../components/Button";
 import Layout from "../components/Layout";
 
 const Home: NextPage = () => {
   return (
     <Layout>
-      <div>Main Content</div>
+      <div>
+        <Button>Click Me!</Button>
+      </div>
     </Layout>
   );
 };
