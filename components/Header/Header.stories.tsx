@@ -1,5 +1,4 @@
 import { ComponentStory, ComponentMeta } from "@storybook/react";
-
 import Header from "./Header";
 
 export default {
@@ -7,10 +6,10 @@ export default {
   component: Header,
 } as ComponentMeta<typeof Header>;
 
-const Template: ComponentStory<typeof Header> = (args) => <Header />;
+const Template: ComponentStory<typeof Header> = (args) => <Header {...args} />;
 
-export const Normal = Template.bind({});
+export const Default = Template.bind({});
 
-Normal.args = {
-  //
+Default.args = {
+  backgroundColor: "bg-primary",
 };
