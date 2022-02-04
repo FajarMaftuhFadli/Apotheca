@@ -11,9 +11,9 @@ export default function Header({ backgroundColor = "bg-primary" }: Props) {
         <h3 className="">LOGO</h3>
         <Hamburger className="sm:hidden" />
         <ul className="hidden space-x-4 sm:flex">
-          <li className="">LOREM</li>
-          <li className="">LOREM</li>
-          <li className="">LOREM</li>
+          {["MENU 1", "MENU 2", "MENU 3"].map((v, i) => (
+            <li key={i}>{v}</li>
+          ))}
         </ul>
       </nav>
     </header>
