@@ -1,4 +1,5 @@
 import "../styles/globals.css";
+import { tailwind } from "./viewport";
 
 export const parameters = {
   actions: { argTypesRegex: "^on[A-Z].*" },
@@ -7,5 +8,8 @@ export const parameters = {
       color: /(background|color)$/i,
       date: /Date$/,
     },
+  },
+  viewport: {
+    viewports: tailwind,
   },
 };
