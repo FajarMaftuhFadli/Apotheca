@@ -8,9 +8,11 @@ export default function Hamburger({
   className,
 }: Props) {
   return (
-    <button className={`flex h-5 flex-col justify-between ${className}`}>
+    <button className={`group flex h-5 flex-col justify-between ${className}`}>
       {[...Array(3)].map(() => (
-        <div className={`h-[0.15rem] w-7 ${backgroundColor}`}></div>
+        <div
+          className={`h-[0.15rem] w-7 ${backgroundColor} group-hover:bg-secondary`}
+        ></div>
       ))}
     </button>
   );
