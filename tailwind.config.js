@@ -1,9 +1,14 @@
-function withOpacityValue(variable) {
+function colorParser(hex) {
+  var rgb = hex
+    .replace("#", "")
+    .match(/.{1,2}/g)
+    .map((v) => parseInt(v, 16));
+  var value = rgb.toString().replaceAll(",", " ");
   return ({ opacityValue }) => {
     if (opacityValue === undefined) {
-      return `rgb(var(${variable}))`;
+      return `rgb(${value})`;
     }
-    return `rgb(var(${variable}) / ${opacityValue})`;
+    return `rgb(${value} / ${opacityValue})`;
   };
 }
 
@@ -15,8 +20,8 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        primary: withOpacityValue("--color-primary"),
-        secondary: withOpacityValue("--color-secondary"),
+        primary: colorParser("#f0f9ff"),
+        secondary: colorParser("#1200aa"),
       },
     },
   },

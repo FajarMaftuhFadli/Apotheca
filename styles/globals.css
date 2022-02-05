@@ -1,8 +1,3 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
-* {
-  --color-primary: 129 140 248;
-  --color-secondary: 124 58 237;
-}
