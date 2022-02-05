@@ -10,4 +10,7 @@ module.exports = {
     "@storybook/addon-postcss",
   ],
   framework: "@storybook/react",
+  core: {
+    builder: "webpack5",
+  },
 };
