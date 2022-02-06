@@ -1,6 +1,6 @@
-import Hamburger from "../Hamburger/Hamburger";
+import Hamburger from "./Hamburger/Hamburger";
 import LogoFull from "../Logo/LogoFull";
-import Nav_Ul from "../Nav/Nav_Ul";
+import Nav_Ul from "./Nav/Nav_Ul";
 
 export interface Props {
   backgroundColor?:

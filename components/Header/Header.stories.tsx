@@ -2,7 +2,7 @@ import { ComponentStory, ComponentMeta } from "@storybook/react";
 import Header from "./Header";
 
 export default {
-  title: "Design System/Header/Header",
+  title: "Design System/Header",
   component: Header,
 } as ComponentMeta<typeof Header>;
 
