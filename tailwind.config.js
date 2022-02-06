@@ -21,7 +21,9 @@ module.exports = {
     extend: {
       colors: {
         primary: colorParser("#f0f9ff"),
-        secondary: colorParser("#1200aa"),
+        secondary: colorParser("#818cf8"),
+        tertiary: colorParser("#000000"),
+        quaternary: colorParser("#000000"),
       },
     },
   },

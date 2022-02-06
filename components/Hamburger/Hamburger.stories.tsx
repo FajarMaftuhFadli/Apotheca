@@ -13,5 +13,5 @@ const Template: ComponentStory<typeof Hamburger> = (args) => (
 export const Default = Template.bind({});
 
 Default.args = {
-  backgroundColor: "bg-gray-200",
+  backgroundColor: "bg-gray-500",
 };
