@@ -18,7 +18,7 @@ export default function Footer({
   return (
     <footer className={`z-0 h-60 ${className} ${backgroundColor}`}>
       <div className="before: h-full w-full p-4 before:absolute before:top-0 before:bottom-0 before:left-0 before:right-0 before:-z-10 before:rotate-180 before:shadow-md">
-        <div className="max-w-4xl">
+        <div className="mx-auto max-w-4xl">
           <LogoFull className="h-10" />
         </div>
       </div>
