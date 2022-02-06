@@ -12,5 +12,4 @@ export const Default = Template.bind({});
 
 Default.args = {
   backgroundColor: "bg-base-1",
-  textColor: "text-secondary-1",
 };
