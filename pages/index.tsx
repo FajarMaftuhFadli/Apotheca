@@ -1,15 +1,9 @@
 import type { NextPage } from "next";
 import Button from "../components/Button/Button";
-import Layout from "../components/Layout";
+import Layout from "../components/Layout/Layout";
 
 const Home: NextPage = () => {
-  return (
-    <Layout>
-      <div>
-        <Button />
-      </div>
-    </Layout>
-  );
+  return <Layout></Layout>;
 };
 
 export default Home;
