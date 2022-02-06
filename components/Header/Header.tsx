@@ -21,9 +21,7 @@ export default function Header({
       <nav
         className={`mx-auto flex h-12 max-w-4xl items-center justify-between`}
       >
-        <div className="h-full">
-          <LogoFull className="h-full" />
-        </div>
+        <LogoFull className="h-full" />
         <Hamburger className="sm:hidden" />
         <Nav_Ul className="hidden space-x-4 sm:flex" />
       </nav>
