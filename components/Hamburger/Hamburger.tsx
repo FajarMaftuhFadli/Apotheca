@@ -19,8 +19,8 @@ export interface Props {
 
 export default function Hamburger({
   backgroundColor = "bg-secondary-1",
-  hoverColor = "group-hover:bg-primary-2",
-  activeColor = "group-active:bg-primary-3",
+  hoverColor = "group-hover:bg-secondary-2",
+  activeColor = "group-active:bg-secondary-3",
   className,
 }: Props) {
   return (
