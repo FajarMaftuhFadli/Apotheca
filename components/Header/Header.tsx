@@ -17,9 +17,9 @@ export default function Header({
   className,
 }: Props) {
   return (
-    <header className={`px-4 py-2 ${className} ${backgroundColor}`}>
+    <header className={`px-4 shadow-md ${className} ${backgroundColor}`}>
       <nav
-        className={`mx-auto flex h-12 max-w-4xl items-center justify-between`}
+        className={`mx-auto flex h-16 max-w-4xl items-center justify-between py-2`}
       >
         <LogoFull className="h-full" />
         <Hamburger className="sm:hidden" />
