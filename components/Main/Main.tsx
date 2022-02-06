@@ -1,8 +1,21 @@
 export interface Props {
+  backgroundColor?:
+    | "bg-base-1"
+    | "bg-base-2"
+    | "bg-primary-1"
+    | "bg-secondary-1"
+    | "bg-tertiary-1"
+    | "bg-quaternary-1";
   className?: string;
   children?: JSX.Element;
 }
 
-export default function Main({ className, children }: Props) {
-  return <main className={className}>{children}</main>;
+export default function Main({
+  backgroundColor = "bg-base-2",
+  className,
+  children,
+}: Props) {
+  return (
+    <main className={`p-4 ${className} ${backgroundColor}`}>{children}</main>
+  );
 }
