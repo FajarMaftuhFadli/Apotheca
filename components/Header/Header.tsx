@@ -5,6 +5,7 @@ import Nav_Ul from "./Nav/Nav_Ul";
 export interface Props {
   backgroundColor?:
     | "bg-base-1"
+    | "bg-base-2"
     | "bg-primary-1"
     | "bg-secondary-1"
     | "bg-tertiary-1"
@@ -13,7 +14,7 @@ export interface Props {
 }
 
 export default function Header({
-  backgroundColor = "bg-base-1",
+  backgroundColor = "bg-base-2",
   className,
 }: Props) {
   return (

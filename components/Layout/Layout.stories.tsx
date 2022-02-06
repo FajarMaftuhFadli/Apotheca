@@ -7,14 +7,12 @@ export default {
   component: Layout,
 } as ComponentMeta<typeof Layout>;
 
-const Template: ComponentStory<typeof Layout> = (args) => (
-  <Layout>{args.children}</Layout>
-);
+const Template: ComponentStory<typeof Layout> = (args) => <Layout {...args} />;
 
 export const Default = Template.bind({});
 
 Default.args = {
-  children: <div className="bg-base-2 h-64"></div>,
+  children: <div className="h-64"></div>,
 };
 
 export const NoChildren = Template.bind({});

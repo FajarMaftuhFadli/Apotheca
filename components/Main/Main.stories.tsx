@@ -12,7 +12,7 @@ const Template: ComponentStory<typeof Main> = (args) => <Main {...args} />;
 export const Default = Template.bind({});
 
 Default.args = {
-  backgroundColor: "bg-base-2",
+  backgroundColor: "bg-base-1",
   children: (
     <div>
       Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime deserunt

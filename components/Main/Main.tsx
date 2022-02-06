@@ -11,11 +11,11 @@ export interface Props {
 }
 
 export default function Main({
-  backgroundColor = "bg-base-2",
+  backgroundColor = "bg-base-1",
   className,
   children,
 }: Props) {
   return (
-    <main className={`p-4 ${className} ${backgroundColor}`}>{children}</main>
+    <main className={`px-4 ${className} ${backgroundColor}`}>{children}</main>
   );
 }

@@ -32,7 +32,7 @@ module.exports = {
     extend: {
       colors: {
         base: {
-          1: colorParser("#e0f2fe"),
+          1: colorParser("#f8fafc"),
           2: colorParser("#f0f9ff"),
         },
         primary: {

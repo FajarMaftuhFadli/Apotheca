@@ -11,5 +11,5 @@ const Template: ComponentStory<typeof Header> = (args) => <Header {...args} />;
 export const Default = Template.bind({});
 
 Default.args = {
-  backgroundColor: "bg-base-1",
+  backgroundColor: "bg-base-2",
 };

@@ -7,8 +7,10 @@ export default {
   component: Footer,
 } as ComponentMeta<typeof Footer>;
 
-const Template: ComponentStory<typeof Footer> = (args) => <Footer />;
+const Template: ComponentStory<typeof Footer> = (args) => <Footer {...args} />;
 
 export const Default = Template.bind({});
 
-Default.args = {};
+Default.args = {
+  backgroundColor: "bg-base-2",
+};
