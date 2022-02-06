@@ -6,6 +6,12 @@ export default {
   component: LogoFull,
 } as ComponentMeta<typeof LogoFull>;
 
-const Template: ComponentStory<typeof LogoFull> = (...args) => <LogoFull />;
+const Template: ComponentStory<typeof LogoFull> = (args) => (
+  <LogoFull {...args} />
+);
 
 export const Default = Template.bind({});
+
+Default.args = {
+  backgroundColor: "fill-primary-1",
+};

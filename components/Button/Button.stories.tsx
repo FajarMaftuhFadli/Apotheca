@@ -13,12 +13,16 @@ export const Primary = Template.bind({});
 
 Primary.args = {
   value: "Click Me!",
-  backgroundColor: "bg-primary",
+  backgroundColor: "bg-primary-1",
+  hoverColor: "hover:bg-primary-2",
+  activeColor: "active:bg-primary-3",
 };
 
 export const Secondary = Template.bind({});
 
 Secondary.args = {
-  value: "Click Me!",
-  backgroundColor: "bg-secondary",
+  value: "READ MORE",
+  backgroundColor: "bg-secondary-1",
+  hoverColor: "hover:bg-secondary-2",
+  activeColor: "active:bg-secondary-3",
 };

@@ -2,15 +2,20 @@ import Hamburger from "../Hamburger/Hamburger";
 import LogoFull from "../Logo/LogoFull";
 
 export interface Props {
-  backgroundColor?: "bg-primary" | "bg-secondary";
+  backgroundColor?:
+    | "bg-base-1"
+    | "bg-primary-1"
+    | "bg-secondary-1"
+    | "bg-tertiary-1"
+    | "bg-quaternary-1";
 }
 
-export default function Header({ backgroundColor = "bg-primary" }: Props) {
+export default function Header({ backgroundColor = "bg-base-1" }: Props) {
   return (
     <header className={`px-4 py-2 ${backgroundColor}`}>
       <nav className="mx-auto flex h-12 max-w-2xl items-center justify-between text-lg font-semibold text-gray-200">
         <div className="h-full">
-          <LogoFull className="fill-secondary h-full" />
+          <LogoFull className="h-full" />
         </div>
         <Hamburger className="sm:hidden" />
         <ul className="hidden space-x-4 sm:flex">

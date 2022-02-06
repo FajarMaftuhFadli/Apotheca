@@ -20,10 +20,26 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        primary: colorParser("#f0f9ff"),
-        secondary: colorParser("#818cf8"),
-        tertiary: colorParser("#000000"),
-        quaternary: colorParser("#000000"),
+        base: {
+          1: colorParser("#e0f2fe"),
+          2: colorParser("#f0f9ff"),
+        },
+        primary: {
+          1: colorParser("#6366f1"),
+          2: colorParser("#818cf8"),
+          3: colorParser("#4f46e5"),
+        },
+        secondary: {
+          1: colorParser("#64748b"),
+          2: colorParser("#94a3b8"),
+          3: colorParser("#475569"),
+        },
+        tertiary: {
+          1: colorParser("#000000"),
+        },
+        quaternary: {
+          1: colorParser("#000000"),
+        },
       },
     },
   },
