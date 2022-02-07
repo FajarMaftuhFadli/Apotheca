@@ -2,6 +2,15 @@ import { ComponentStory, ComponentMeta } from "@storybook/react";
 
 import Banner from "./Banner";
 
+import * as NextImage from "next/image";
+
+const OriginalNextImage = NextImage.default;
+
+Object.defineProperty(NextImage, "default", {
+  configurable: true,
+  value: (props: any) => <OriginalNextImage {...props} unoptimized />,
+});
+
 export default {
   title: "Design System/Banner",
   component: Banner,
