@@ -6,8 +6,8 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "storybook": "start-storybook --no-open -p 3001",
-    "build-storybook": "build-storybook"
+    "storybook": "start-storybook --no-open -p 3001 -s ./public",
+    "build-storybook": "build-storybook -s public"
   },
   "dependencies": {
     "@storybook/addon-postcss": "^2.0.0",
